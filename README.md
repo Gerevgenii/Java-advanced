@@ -1,11 +1,7 @@
 # Java-advanced
 This repository is based on the tasks I solved during the fourth semester during my studies at CT ITMO.
 
-## Тесты к курсу «Технологии Java»
-
-[Условия домашних заданий](https://www.kgeorgiy.info/courses/java-advanced/homeworks.html)
-
-## Домашнее задание 1. Обход файлов
+## Домашнее задание 1. [Обход файлов]()
 1. Разработайте класс Walk, осуществляющий подсчет хеш-сумм файлов.
    1. Формат запуска:
       java Walk <входной файл> <выходной файл>
@@ -35,14 +31,14 @@ This repository is based on the tasks I solved during the fourth semester during
 > [!NOTE]
 > Исходный код
 > * простой вариант (`Walk`):
->   [тесты](modules/info.kgeorgiy.java.advanced.walk/info/kgeorgiy/java/advanced/walk/WalkTest.java)
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.walk/info/kgeorgiy/java/advanced/walk/WalkTest.java)
 >
->   Тестовый модуль: [info.kgeorgiy.java.advanced.walk](artifacts/info.kgeorgiy.java.advanced.walk.jar)
+>   Тестовый модуль: [info.kgeorgiy.java.advanced.walk](tests/artifacts/info.kgeorgiy.java.advanced.walk.jar)
 >   Для того, чтобы протестировать программу:
 >   - Скачайте
 >     - тесты
->       - [базовый модуль](artifacts/info.kgeorgiy.java.advanced.base.jar)
->       - [тестовый модуль](artifacts/info.kgeorgiy.java.advanced.walk.jar) (свой для каждого ДЗ)
+>       - [базовый модуль](tests/artifacts/info.kgeorgiy.java.advanced.base.jar)
+>       - [тестовый модуль](tests/artifacts/info.kgeorgiy.java.advanced.walk.jar) (свой для каждого ДЗ)
 >     - [библиотеки](lib)
 >   - Откомпилируйте решение домашнего задания
 >   - Протестируйте домашнее задание
@@ -55,7 +51,7 @@ This repository is based on the tasks I solved during the fourth semester during
 >       - Пример для простого варианта ДЗ-1:
 >       `java -cp . -p . -m info.kgeorgiy.java.advanced.walk Walk <полное имя класса>`
 
-## Домашнее задание 2. Множество на массиве
+## Домашнее задание 2. [Множество на массиве](java-solutions/info/kgeorgiy/ja/gerasimov/arrayset/ArraySet.java)
 1. Разработайте класс ArraySet, реализующий неизменяемое упорядоченное множество.
    - Класс ArraySet должен реализовывать интерфейс SortedSet (простой вариант) или NavigableSet (сложный вариант).
    - Все операции над множествами должны производиться с наилучшей асимптотической эффективностью.
@@ -67,10 +63,10 @@ This repository is based on the tasks I solved during the fourth semester during
 
 > [!NOTE]
 > - Вариант (`SortedSet`):
->   [тесты](modules/info.kgeorgiy.java.advanced.arrayset/info/kgeorgiy/java/advanced/arrayset/SortedSetTest.java)
-> - Тестовый модуль: [info.kgeorgiy.java.advanced.arrayset](artifacts/info.kgeorgiy.java.advanced.arrayset.jar)
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.arrayset/info/kgeorgiy/java/advanced/arrayset/SortedSetTest.java)
+> - Тестовый модуль: [info.kgeorgiy.java.advanced.arrayset](tests/artifacts/info.kgeorgiy.java.advanced.arrayset.jar)
 
-## Домашнее задание 3. Студенты
+## Домашнее задание 3. [Студенты](java-solutions/info/kgeorgiy/ja/gerasimov/student/StudentDB.java)
 1. Разработайте класс StudentDB, осуществляющий поиск по базе данных студентов.
    - Класс StudentDB должен реализовывать интерфейс StudentQuery (простой вариант) или GroupQuery (сложный вариант).
    - Каждый метод должен состоять из ровно одного оператора. При этом длинные операторы надо разбивать на несколько строк.
@@ -80,10 +76,10 @@ This repository is based on the tasks I solved during the fourth semester during
 
 > [!NOTE]
 >  * Вариант (`StudentQuery`):
->   [интерфейс](modules/info.kgeorgiy.java.advanced.student/info/kgeorgiy/java/advanced/student/StudentQuery.java),
->   [тесты](modules/info.kgeorgiy.java.advanced.student/info/kgeorgiy/java/advanced/student/StudentQueryTest.java)
+>   [интерфейс](tests/modules/info.kgeorgiy.java.advanced.student/info/kgeorgiy/java/advanced/student/StudentQuery.java),
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.student/info/kgeorgiy/java/advanced/student/StudentQueryTest.java)
 
-## Домашнее задание 4. Implementor
+## Домашнее задание 4. [Implementor](java-solutions/info/kgeorgiy/ja/gerasimov/implementor/Implementor.java)
 1. Реализуйте класс Implementor, генерирующий реализации классов и интерфейсов.
    - Аргумент командной строки: полное имя класса/интерфейса, для которого требуется сгенерировать реализацию.
    - В результате работы должен быть сгенерирован java-код класса с суффиксом Impl, расширяющий (реализующий) указанный класс (интерфейс).
@@ -94,13 +90,14 @@ This repository is based on the tasks I solved during the fourth semester during
 
 > [!NOTE]
 > - Класс `Implementor` должен реализовывать интерфейс
->   [Impler](modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/Impler.java).
+>   [Impler](tests/modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/Impler.java).
 > - Вариант (`interface`): 
->   [тесты](modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/InterfaceImplementorTest.java)
-> - Тестовый модуль: [info.kgeorgiy.java.advanced.implementor](artifacts/info.kgeorgiy.java.advanced.implementor.jar)
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/InterfaceImplementorTest.java)
+> - Тестовый модуль: [info.kgeorgiy.java.advanced.implementor](tests/artifacts/info.kgeorgiy.java.advanced.implementor.jar)
 
-## Домашнее задание 5. Jar Implementor
-Это домашнее задание связано с предыдущим и будет приниматься только с ним. Предыдущее домашнее задание отдельно сдать будет нельзя.
+## Домашнее задание 5. [Jar Implementor](java-solutions/info/kgeorgiy/ja/gerasimov/implementor/Implementor.java)
+> [!WARNING]
+> Это домашнее задание связано с предыдущим и будет приниматься только с ним. Предыдущее домашнее задание отдельно сдать будет нельзя.
 
 1. Создайте .jar-файл, содержащий скомпилированный Implementor и сопутствующие классы.
    - Созданный .jar-файл должен запускаться командой java -jar.
@@ -113,15 +110,15 @@ This repository is based on the tasks I solved during the fourth semester during
 
 > [!NOTE]
 > 1. Класс `Implementor` должен дополнительно реализовывать интерфейс
->    [JarImpler](modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/JarImpler.java).
+>    [JarImpler](tests/modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/JarImpler.java).
 > 2. Скрипты, `MANIFEST.MF` и `.jar-файл` должны находиться в каталоге `scripts` в корне репозитория. 
 > 3. Скомпилированный Javadoc должен находиться в каталоге `javadoc` в корне репозитория.
 > 4. В скриптах вы можете рассчитывать на то, что репозиторий курса лежит рядом с вашим репозиторием в каталоге `java-advanced-2024`.
 > - Вариант (`jar-interface`):
->   [тесты](modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/InterfaceJarImplementorTest.java)
-> - Тестовый модуль: [info.kgeorgiy.java.advanced.implementor](artifacts/info.kgeorgiy.java.advanced.implementor.jar)
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.implementor/info/kgeorgiy/java/advanced/implementor/InterfaceJarImplementorTest.java)
+> - Тестовый модуль: [info.kgeorgiy.java.advanced.implementor](tests/artifacts/info.kgeorgiy.java.advanced.implementor.jar)
 
-## Домашнее задание 6. Javadoc
+## Домашнее задание 6. [Javadoc](java-solutions/info/kgeorgiy/ja/gerasimov/implementor/Implementor.java)
 > [!WARNING]
 > Это домашнее задание связано с двумя предыдущими и будет приниматься только с ними. Предыдущие домашнее задание отдельно сдать будет нельзя.
 
@@ -136,7 +133,7 @@ This repository is based on the tasks I solved during the fourth semester during
 > [!NOTE]
 > Заметки в задании 5
 
-## Домашнее задание 7. Итеративный параллелизм
+## Домашнее задание 7. [Итеративный параллелизм](java-solutions/info/kgeorgiy/ja/gerasimov/iterative/IterativeParallelism.java)
 1. Реализуйте класс IterativeParallelism, который будет обрабатывать списки в несколько потоков.
 2. В варианте должны быть реализованы следующие методы:
    - minimum(threads, list, comparator) — первый минимум;
@@ -151,15 +148,15 @@ This repository is based on the tasks I solved during the fourth semester during
 > [!NOTE]
 > - Вариант (`scalar`):
 >   - Класс должен реализовывать интерфейс
->     [ScalarIP](modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/ScalarIP.java).
->   - [тесты](modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/ScalarIPTest.java)
+>     [ScalarIP](tests/modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/ScalarIP.java).
+>   - [тесты](tests/modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/ScalarIPTest.java)
 > - Модификация (`new-scalar`):
 >   - Класс должен реализовывать интерфейс
->     [NewScalarIP](modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/NewScalarIP.java).
->   - [тесты](modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/NewScalarIPTest.java)
-> - Тестовый модуль: [info.kgeorgiy.java.advanced.iterative](artifacts/info.kgeorgiy.java.advanced.iterative.jar)
+>     [NewScalarIP](tests/modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/NewScalarIP.java).
+>   - [тесты](tests/modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/NewScalarIPTest.java)
+> - Тестовый модуль: [info.kgeorgiy.java.advanced.iterative](tests/artifacts/info.kgeorgiy.java.advanced.iterative.jar)
 
-## Домашнее задание 8. Параллельный запуск
+## Домашнее задание 8. [Параллельный запуск](java-solutions/info/kgeorgiy/ja/gerasimov/iterative/ParallelMapperImpl.java)
 1. Напишите класс ParallelMapperImpl, реализующий интерфейс ParallelMapper.
    ```
    public interface ParallelMapper extends AutoCloseable {
@@ -187,14 +184,14 @@ This repository is based on the tasks I solved during the fourth semester during
 
 > [!NOTE]
 > - Вариант (`scalar`):
->   [тесты](modules/info.kgeorgiy.java.advanced.mapper/info/kgeorgiy/java/advanced/mapper/ScalarMapperTest.java)
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.mapper/info/kgeorgiy/java/advanced/mapper/ScalarMapperTest.java)
 > - Модификация (`new-scalar`):
 >   - Класс `IterativeParallelism` должен реализовывать интерфейс
->     [NewScalarIP](modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/NewScalarIP.java).
->   - [Тесты](modules/info.kgeorgiy.java.advanced.mapper/info/kgeorgiy/java/advanced/mapper/NewScalarMapperTest.java)
-> - Тестовый модуль: [info.kgeorgiy.java.advanced.mapper](artifacts/info.kgeorgiy.java.advanced.mapper.jar)
+>     [NewScalarIP](tests/modules/info.kgeorgiy.java.advanced.iterative/info/kgeorgiy/java/advanced/iterative/NewScalarIP.java).
+>   - [Тесты](tests/modules/info.kgeorgiy.java.advanced.mapper/info/kgeorgiy/java/advanced/mapper/NewScalarMapperTest.java)
+> - Тестовый модуль: [info.kgeorgiy.java.advanced.mapper](tests/artifacts/info.kgeorgiy.java.advanced.mapper.jar)
 
-## Домашнее задание 9. Web Crawler
+## Домашнее задание 9. [Web Crawler](java-solutions/info/kgeorgiy/ja/gerasimov/crawler/WebCrawler.java)
 1. Напишите потокобезопасный класс WebCrawler, который будет рекурсивно обходить сайты.
    1. Класс WebCrawler должен иметь конструктор
       public WebCrawler(Downloader downloader, int downloaders, int extractors, int perHost)
@@ -240,12 +237,12 @@ This repository is based on the tasks I solved during the fourth semester during
 > [!NOTE]
 > Тесты используют только внутренние данные и ничего не скачивают из интернета.
 > - Вариант (`easy`):
->   [тесты](modules/info.kgeorgiy.java.advanced.crawler/info/kgeorgiy/java/advanced/crawler/EasyCrawlerTest.java)
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.crawler/info/kgeorgiy/java/advanced/crawler/EasyCrawlerTest.java)
 > - Модификация (`new-easy`):
->   [интерфейс](modules/info.kgeorgiy.java.advanced.crawler/info/kgeorgiy/java/advanced/crawler/NewCrawler.java),
->   [тесты](modules/info.kgeorgiy.java.advanced.crawler/info/kgeorgiy/java/advanced/crawler/NewEasyCrawlerTest.java)
+>   [интерфейс](tests/modules/info.kgeorgiy.java.advanced.crawler/info/kgeorgiy/java/advanced/crawler/NewCrawler.java),
+>   [тесты](tests/modules/info.kgeorgiy.java.advanced.crawler/info/kgeorgiy/java/advanced/crawler/NewEasyCrawlerTest.java)
 
-## Домашнее задание 10. HelloUDP
+## Домашнее задание 10. [HelloUDP](java-solutions/info/kgeorgiy/ja/gerasimov/hello/HelloUDPClient.java)
 1. Реализуйте клиент и сервер, взаимодействующие по UDP.
 2. Класс HelloUDPClient должен отправлять запросы на сервер, принимать результаты и выводить их на консоль.
    - Аргументы командной строки:
@@ -267,16 +264,16 @@ This repository is based on the tasks I solved during the fourth semester during
 > [!NOTE]
 > 1. Интерфейсы
 >    - `HelloUDPClient` должен реализовывать интерфейс
->      [HelloClient](modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/HelloClient.java)
+>      [HelloClient](tests/modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/HelloClient.java)
 >    - `HelloUDPServer` должен реализовывать интерфейс
->      [HelloServer](modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/HelloServer.java)
+>      [HelloServer](tests/modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/HelloServer.java)
 > 2. Тестирование
 >    - Базовый вариант (`client` и `server`)
 >    - Вариант (`new-client` и `new-server`)
 >      `HelloUDPServer` должен реализовывать интерфейс
->      [NewHelloServer](modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/NewHelloServer.java)
+>      [NewHelloServer](tests/modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/NewHelloServer.java)
 
-## Домашнее задание 11. Физические лица
+## Домашнее задание 11. [Физические лица](java-solutions/info/kgeorgiy/ja/gerasimov/bank)
 1. Добавьте к банковскому приложению возможность работы с физическими лицами.
    1. У физического лица (Person) можно запросить имя, фамилию и номер паспорта.
    2. Удалённые физические лица (RemotePerson) должны передаваться при помощи удалённых объектов.
@@ -303,28 +300,7 @@ This repository is based on the tasks I solved during the fourth semester during
 > 1. Модификации
 >    Без модификации.
 
-## Домашнее задание 12. HelloNonblockingUDP
-1. Реализуйте клиент и сервер, взаимодействующие по UDP, используя только неблокирующий ввод-вывод.
-2. Класс HelloUDPNonblockingClient должен иметь функциональность аналогичную HelloUDPClient, но без создания новых потоков.
-3. Класс HelloUDPNonblockingServer должен иметь функциональность аналогичную HelloUDPServer, но все операции с сокетом должны производиться в одном потоке.
-4. В реализации не должно быть активных ожиданий, в том числе через Selector.
-5. Обратите внимание на выделение общего кода старой и новой реализации.
-6. Бонусный вариант. Клиент и сервер могут перед началом работы выделить O(число рабочих потоков) памяти. Выделять дополнительную память во время работы запрещено.
-
-> [!NOTE]
-> 1. Интерфейсы
->    - `HelloUDPNonblockingClient` должен реализовывать интерфейс
-       [HelloClient](modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/HelloClient.java)
->    - `HelloUDPNonblockingServer` должен реализовывать интерфейс
->      [HelloServer](modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/HelloServer.java)
-> 2. Тестирование
->    - Базовый вариант (`client` и `server`)
->    - Вариант (`new-client` и `new-server`)
->      `HelloUDPNonblockingServer` должен реализовывать интерфейс
->      [NewHelloServer](modules/info.kgeorgiy.java.advanced.hello/info/kgeorgiy/java/advanced/hello/NewHelloServer.java)
-> 3. Тестовый модуль: [info.kgeorgiy.java.advanced.hello](artifacts/info.kgeorgiy.java.advanced.hello.jar)
-
-## Домашнее задание 13. Статистика текста
+## Домашнее задание 12. [Статистика текста](java-solutions/info/kgeorgiy/ja/gerasimov/i18n/I18n.java)
 1. Создайте приложение TextStatistics, анализирующее тексты на различных языках.
    1. Аргументы командной строки:
       - локаль текста,
